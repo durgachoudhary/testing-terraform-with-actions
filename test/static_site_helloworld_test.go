@@ -33,5 +33,5 @@ func TestTerraformHelloWorldExample(t *testing.T) {
 
 	// Run `terraform output` to get the values of output variables and check they have the expected values.
 	output := terraform.Output(t, terraformOptions, "hello_world")
-	assert.NotEqual(t, "Hello-World", output)
+	assert.Equal(t, "\"Hello-World\"", output)
 }
