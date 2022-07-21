@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Hello World
 on: push
 jobs:
   go-tests:
