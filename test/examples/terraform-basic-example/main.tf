@@ -24,3 +24,7 @@ resource "local_file" "example2" {
   content  = var.example2
   filename = "example2.txt"
 }
+
+output "hello_world" {
+  value = "Hello, World!"
+}
