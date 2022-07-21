@@ -18,7 +18,7 @@ func TestTerraformHelloWorldExample(t *testing.T) {
 	//_fixturesDir := test_structure.CopyTerraformFolderToTemp(t, "../", "test/examples")
 	//exampleDir := filepath.Join(_fixturesDir, "terraform-hello-world-example")
 	exampleDir := "../examples/terraform-hello-world-example"
-	terratestOptions := &terraform.Options{
+	terraformOptions := &terraform.Options{
 		// The path to where your Terraform code is located
 		TerraformDir: exampleDir,
 		Vars:         map[string]interface{}{},
