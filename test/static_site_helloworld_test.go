@@ -23,7 +23,7 @@ func TestTerraformHelloWorldExample(t *testing.T) {
 		TerraformDir: exampleDir,
 		Vars:         map[string]interface{}{},
 	}
-	t.Logf("Running in %s", exampleDir)
+	//t.Logf("Running in %s", exampleDir)
 
 	// Clean up resources with "terraform destroy" at the end of the test.
 	defer terraform.Destroy(t, terraformOptions)
